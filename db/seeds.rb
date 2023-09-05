@@ -5,4 +5,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-User.create(email: "admin@example.net", password: "adminadmin")
+User.create(email: "admin@example.net", password: "adminadmin", password_confirmation: "adminadmin")
+Server.create(name: "Dummy Server", description: "Just a dummy server", scriptpath: "$SCRIPTS/dummy")
+User.first.servers << Server.first

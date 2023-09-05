@@ -1,2 +1,0 @@
-class UsersService < ApplicationRecord
-end
